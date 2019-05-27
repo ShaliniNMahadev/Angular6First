@@ -1,0 +1,27 @@
+<!-- <h5>without class</h5>
+<ul>
+  <li>{{name}}</li>
+  <li>{{education}}</li>
+  
+</ul>
+
+<hr>
+<h5>using class</h5>
+<h2>{{detail.title | uppercase}} </h2>
+<p>{{detail.id}}</p>
+<p>{{detail.name}}</p>
+<p>{{detail.designation}}</p>
+<p>{{detail.place}}</p>
+
+<h5>datalist binding</h5> -->
+
+
+
+<ul>
+  <li *ngFor="let n of datalist" (click)="onSelect(n)" ><b>Title:</b>{{n.title}}<br>
+    <b>Designation:</b>{{n.designation}}<br>
+    <b>Place:</b>{{n.place}}</li><br>
+</ul>
+<app-comp-detail [data]="dataselect"></app-comp-detail>
+
+
